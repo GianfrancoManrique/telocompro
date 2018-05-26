@@ -14,4 +14,17 @@ modelo.consultarPerfil=(idficha)=>{
 	});
 }
 
+modelo.regCliente=(idficha)=>{
+	return new Promise(async (resolve,reject)=>{
+		try {
+			let comando='insert into produccion.cliente(idficha,url) values(';
+			comando=comando.concat(idficha,',\'',url,'\')');
+			let resultado=await conexion.query(comando);
+			resolve(resultado);
+		} catch (error) {
+			reject(error);
+		}
+	});
+}
+
 module.exports = modelo;
