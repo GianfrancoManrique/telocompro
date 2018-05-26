@@ -310,3 +310,6 @@ li a{
 	border: 0 transparent;
 	margin: 20px 0;
 }
+.tsmall{
+	transform: scale(0.7);
+}
