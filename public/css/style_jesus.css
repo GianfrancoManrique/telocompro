@@ -2,6 +2,23 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/************* INICIO **************
+**********************************/
+.home-background {
+    background: url(../img/home.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nombre_page {
+    display: flex;
+    align-items: center;
+}
+
+
+/****** FORMULARIO REGISTRO ******
+**********************************/
 .card-cliente {
     opacity: 0.49;
     border-radius: 10px;
