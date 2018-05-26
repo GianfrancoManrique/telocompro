@@ -15,6 +15,13 @@ controlador.obtenerFechayHora = async (req, res, next)=>{
 	}
 }
 */
+controlador.principal= async (req, res, next)=>{
+	try {
+        res.render("index");
+	} catch (error) {
+		console.log(error);
+	}
+}
 controlador.crearCliente= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
@@ -63,5 +70,16 @@ controlador.registrarCliente= async (req, res, next)=>{
 		console.log(error);
 	}
 }
-
+controlador.registrarSubasta= async (req, res, next)=>{
+	try {
+		let cliente={nombreentidad:req.body.nombreentidad,numcuotasrestantes:req.body.numcuotasrestantes,
+			cuotamensual:req.body.cuotamensual,tea:req.body.tea,idcliente:req.body.idcliente
+		}
+		
+		let idregistrado=await model.regDeuda(cliente);
+		res.send(idregistrado);
+	} catch (error) {
+		console.log(error);
+	}
+}
 module.exports = controlador;
