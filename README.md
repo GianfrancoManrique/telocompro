@@ -1,1 +1,1 @@
-# telocompro
+# tecompro
