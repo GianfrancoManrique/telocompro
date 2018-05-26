@@ -19,6 +19,9 @@
 	text-align: center;
 	padding: 10px;
 	font-family: 'Baloo Bhaina', cursive;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 .oferta-title{
 	width: 174px;
@@ -100,6 +103,7 @@
 	line-height: 80px;
 	text-align: center;
 	border-radius: 50%;
+	margin-bottom: 10px;
 }
 .crear-item{
 	margin-top: 220px;
@@ -129,4 +133,101 @@ li a{
 	font-size: 12px;
 	padding-right: 20px;
 	color: gray
+}
+
+.ingresar-deuda{
+	margin-top: 20px;
+	text-align: center;
+
+}
+.ingresar-mouns{
+	position: relative;
+}
+.ingresar-deuda .mouns-input{
+	position: absolute;
+	top: 55%;
+	left: 60%;
+	width: 350px;
+	transform: translate(-50%,-50%);
+	font-size: 40px;
+	font-family: 'Baloo Bhaina', cursive;
+	background: none;
+	border: 0;
+	color: #fff;
+}
+.ingresar-deuda input:focus{
+	outline: 0 transparent;
+}
+.ingresar-mouns span{
+	position: absolute;
+	top: 40px;
+	font-family: 'Baloo Bhaina', cursive;
+	left: 40%;
+	color:  #12a7c8;
+	font-size: 20px;
+}
+.forms{
+	width: 560px;
+	margin: auto;
+	font-family: 'Baloo Bhaina', cursive;
+	color:  #12a7c8;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #f1f1f1;
+}
+.forms h4{
+	font-family: 'Baloo Bhaina', cursive;
+	color:  #12a7c8;
+	margin: 20px 0;
+
+}
+.forms select{
+	border: solid 2px #12a7c8;
+}
+.nucuotas label{
+	display: inline-block;
+}
+.nucuotas input{
+	font-family: 'Open Sans', cursive;
+	margin-left: 10px;
+	width: 114px;
+	display: inline-block;
+	border: solid 2px #12a7c8;
+}
+
+.btn-defaulte{
+	font-family: 'Baloo Bhaina', cursive;
+	width: 235px;
+  	height: 44px;
+  	background: #12a7c8;
+  	color: #fff;
+  	font-size: 18px;
+  	border: 0;
+  	border-radius:10px;
+  	margin: 20px auto;
+  	display: block
+}
+
+.agregar{
+	display: block;
+	font-family: 'Baloo Bhaina', cursive;
+	margin-top: 20px;
+	color: #12a7c8;
+	text-align: center;
+}
+
+.agregar span{
+	width: 30px;
+	height: 30px;
+	background: #12a7c8;
+	display: inline-block;
+	color: #fff;
+	padding-top: 3px;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+}
+.agregar:hover{
+	text-decoration: none;
+	color: #12a7c8;
 }

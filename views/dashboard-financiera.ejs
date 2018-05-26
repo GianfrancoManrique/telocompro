@@ -5,20 +5,23 @@
   					<img class="bcp-image" src="/img/dashboard-bcp.png" alt="">
   				</div>
   				<div class="col-lg-8">
-  					<h1 class="title-section">Ofertas activas</h1>
+					  <h1 class="title-section">Ofertas activas</h1>
+					  <% ofertasActivas.forEach(function(ofA){ %>
   					<div class="item-oferta d-flex flex-column align-items-center justify-content-center">
   						<span class="oferta-title">Deuda subastada</span>
-  						<p class="monto">S/.20,000</p>
+  						<p class="monto"><%= ofA.sum %></p>
   						<span class="oferta-title">Tiempo restante</span>
   						<p class="time">35:05:03</p>
   						<div class="competidores">3 Competidores en subasta</div>
   						<button class="boton-subasta">Ingresar a la subasta</button>
-  					</div>
+					  </div>
+					  
+			<% }) %>
   				</div>
   			</div>
   			
   		</div>
-
+		 
 
 <% include partials/footer %>
    

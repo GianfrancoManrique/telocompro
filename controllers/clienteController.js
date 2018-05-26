@@ -41,9 +41,10 @@ controlador.dashboardusuario= async (req, res, next)=>{
 controlador.dashboardfinanciera= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
-		let ofertasActivas=await model.consultarResumenPorEncuestador();
+		let ofertasActivas=await model.ofertasActivas();
 
-        res.render("dashboard-financiera",ofertasActivas);
+		res.render("dashboard-financiera",{ofertasActivas});
+		console.log(ofertasActivas);
 	} catch (error) {
 		console.log(error);
 	}
@@ -63,7 +64,7 @@ controlador.registrarCliente= async (req, res, next)=>{
 		celular:req.body.celular,tipodoc:req.body.tipodoc,numdoc:req.body.numdoc,
 		departamento:req.body.departamento,provincia:req.body.provincia,distrito:req.body.distrito,
 		correo:req.body.correo,contrasena:req.body.contrasena,fecnacimiento:req.body.fecnacimiento,
-		estcivil:req.body.estcivil
+		estadocivil:req.body.estadocivil,ingresos:req.body.ingresos,dependencia:req.body.dependencia
 		}
 		
 		let idregistrado=await model.regCliente(cliente);

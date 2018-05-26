@@ -7,16 +7,81 @@
 			
 		</div>
 		<div class="col-lg-8">
+			
 			<div class="crear-item">
 				<a href="" class="plus-link">
 					<img src="img/plus.png" alt="">
 				</a>
 				<p>crear mi primera subasta</p>
 			</div>
-			
+			<div class="ingresar-deuda">
+				<div class="ingresar-mouns">
+					<span>Monto total de su deuda a subastar</span>
+					<img src="img/mounstrito.png" alt="">
+					<input class="mouns-input" type="text">
+				</div>
+				<div class="forms">
+					<h4>¿En que entidad bancaria se encuentra tu deuda?</h4>
+					<form action="">
+						<div class="row">
+							
+								<div class="col-lg-5">
+									<select name=""  class="form-control" id="financiero">
+										<option value="">BBVA Continental</option>
+										<option value="">BCP</option>
+										<option value="">Interbank</option>
+										<option value="">Caja Huancayo</option>
+										<option value="">Caja Piura</option>
+									</select>
+								</div>
+								<br>
+								<br>
+								<br>
+								<div class="col-lg-7 nucuotas">
+										<label for="">número total de cuotas</label>
+										<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-6 nucuotas">
+										<label for="">Cuota mensual</label>
+										<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-6 nucuotas">
+									<label for="">TEA %</label>
+									<input type="text" class="form-control">
+								</div>
+							
+						</div>
+					</form>
+				</div>
+
+				
+				
+			</div>	
+			<a href="" class="agregar"><span>+</span> Agregar otra deuda</a>
+			<button class="btn-defaulte">Eso es todo</button>
 		</div>
 	</div>
 </div>
 
 <% include partials/footer %>
    
+   <script>
+
+   	$('.ingresar-deuda').hide();
+   	$('.agregar').hide();
+   	$('.btn-defaulte').hide();
+   	$('.plus-link').click(function(e){
+   		e.preventDefault();
+   		$('.crear-item').hide();
+   		$('.ingresar-deuda').fadeIn();
+		$('.agregar').fadeIn();
+		$('.btn-defaulte').fadeIn();
+   	});
+
+   	$('.agregar').click(function(e){
+   		e.preventDefault();
+   		
+
+   		$('.forms').not('.cloned').clone().addClass('cloned').appendTo('.ingresar-deuda');
+   	});
+   </script>
