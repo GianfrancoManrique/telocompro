@@ -88,7 +88,8 @@ controlador.registrarSubasta= async (req, res, next)=>{
 		}
 		
 		let idregistrado=await model.regSubasta(subasta);
-		res.send(idregistrado);
+		res.redirect('/dashboard-financiera');
+		//res.send(idregistrado);
 	} catch (error) {
 		console.log(error);
 	}

@@ -27,11 +27,11 @@
 								<input type="hidden" name="idcliente" value="6">
 								<div class="col-lg-5">
 									<select name="nombreentidad"  class="form-control" id="financiero">
-										<option value="">BBVA Continental</option>
-										<option value="">BCP</option>
-										<option value="">Interbank</option>
-										<option value="">Caja Huancayo</option>
-										<option value="">Caja Piura</option>
+										<option value="BBVA">BBVA Continental</option>
+										<option value="BCP">BCP</option>
+										<option value="Interbank">Interbank</option>
+										<option value="Caja Huancayo">Caja Huancayo</option>
+										<option value="Caja Piura">Caja Piura</option>
 									</select>
 								</div>
 								<br>
@@ -78,9 +78,13 @@
 		$('.btn-defaulte').fadeIn();
    	});
    	$('.btn-defaulte').click(function(){
-   		$('#formu').submit();
-   	});
+		   $('#formu').submit();
+		  window.setInterval("refresh()",600000);
+});
 
+function refresh(){
+	window.location.href = "/dashboard-financiera";
+}
    	$('.agregar').click(function(e){
    		e.preventDefault();
    		
