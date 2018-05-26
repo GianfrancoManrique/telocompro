@@ -3,6 +3,52 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.item-oferta{
+	width: 288px;
+		height: 416px;
+		border-radius: 10px;
+		background-color: #12a7c8;
+		text-align: center;
+		padding: 10px;
+		font-family: 'Baloo Bhaina', cursive;
+}
+.oferta-title{
+	width: 174px;
+	font-size: 20px;
+	color: #ffffff;
+
+}
+.monto{
+	font-size: 45px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 0;
+}
+.time{
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px 15px;
+	border: solid 1px #fff;
+	border-radius: 10px;
+	margin: 6px 0;
+}
+.competidores{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	width: 80%;
+	text-align: left;
+	line-height: 18px;
+}
+.boton-subasta{
+	width: 251px;
+		height: 59px;
+		border-radius: 10px;
+		background-color: #f31e53;
+		border: 0;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		margin-top: 20px;
 }
