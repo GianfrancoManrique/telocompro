@@ -5,5 +5,6 @@ var controlador = require("../controllers/clienteController");
 /* GET home page. */
 router.get('/', controlador.obtenerFechayHora);
 router.get('/crear-cliente', controlador.crearCliente);
-
-module.exports = router;
+//router.post('/registrar-cliente', controlador.registrarCliente);
+router.get('/dashboard-financiera',controlador.dashboardfinanciera);
+module.exports = router;    
