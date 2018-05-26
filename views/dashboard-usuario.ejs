@@ -22,7 +22,7 @@
 				</div>
 				<div class="forms">
 					<h4>¿En que entidad bancaria se encuentra tu deuda?</h4>
-					<form action="/registrar-subasta" method="POST">
+					<form action="/registrar-subasta" method="POST" id="formu">
 						<div class="row">
 								<input type="hidden" name="idcliente" value="6">
 								<div class="col-lg-5">
@@ -76,6 +76,9 @@
    		$('.ingresar-deuda').fadeIn();
 		$('.agregar').fadeIn();
 		$('.btn-defaulte').fadeIn();
+   	});
+   	$('.btn-defaulte').click(function(){
+   		$('#formu').submit();
    	});
 
    	$('.agregar').click(function(e){

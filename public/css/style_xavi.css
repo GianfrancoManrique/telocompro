@@ -268,4 +268,19 @@ li a{
 .title--small{
 	font-size: 25px;
 }
+.square-item{
+	position: relative;
+}
+.data{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	font-family: 'Baloo Bhaina', cursive;
+	color: #fff;
+	text-align: center;
+}
 
+.fine{
+	font-size: 20px;
+}
