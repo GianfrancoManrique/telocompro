@@ -34,13 +34,15 @@ modelo.regCliente=(cliente)=>{
 	});
 }
 
-modelo.regDeuda=(cliente)=>{
+modelo.regSubasta=(subasta)=>{
 	return new Promise(async (resolve,reject)=>{
 		try {
-			let comando='insert into produccion.deuda (idcliente,nombreentidad,numcuotasrestantes,cuotamensual,tea) values(';
-			comando=comando.concat(cliente.idcliente,',\'',cliente.nombreentidad,'\',');
-			comando=comando.concat(cliente.numcuotasrestantes,',',cliente.cuotamensual,',');
-			comando=comando.concat(cliente.tea,')');
+			let comando='select produccion.usp_insertsubasta(';
+			comando=comando.concat(subasta.idcliente,',');
+			comando=comando.concat('\'',subasta.nombreentidad,'\',');
+			comando=comando.concat(subasta.numcuotasrestantes,',');
+			comando=comando.concat(subasta.cuotamensual,',');
+			comando=comando.concat('\'',subasta.tea,'\')');
 
 			let resultado=await conexion.query(comando);
 			resolve(resultado);

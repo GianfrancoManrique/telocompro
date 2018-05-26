@@ -60,7 +60,7 @@ controlador.subasta= async (req, res, next)=>{
 controlador.subastaUsuario= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
-        res.render("subasta-usuario");
+        res.render("subasta-usuario",{});
 	} catch (error) {
 		console.log(error);
 	}
@@ -83,11 +83,11 @@ controlador.registrarCliente= async (req, res, next)=>{
 }
 controlador.registrarSubasta= async (req, res, next)=>{
 	try {
-		let cliente={nombreentidad:req.body.nombreentidad,numcuotasrestantes:req.body.numcuotasrestantes,
+		let subasta={nombreentidad:req.body.nombreentidad,numcuotasrestantes:req.body.numcuotasrestantes,
 			cuotamensual:req.body.cuotamensual,tea:req.body.tea,idcliente:req.body.idcliente
 		}
 		
-		let idregistrado=await model.regDeuda(cliente);
+		let idregistrado=await model.regSubasta(subasta);
 		res.send(idregistrado);
 	} catch (error) {
 		console.log(error);
