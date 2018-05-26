@@ -67,6 +67,7 @@ body {
     /* border-radius: 10px; */
     /* background-color: #7fccdd; */
     border: solid 1px #7fccdd;
+    font-size: 12px;
 }
 
 .margin-bt {
@@ -81,4 +82,8 @@ body {
 .btn-vamos {
     background-color: #1fa9c7;
     color: #fff;
+}
+
+.margin-top-container {
+    margin-top: 96px;
 }
