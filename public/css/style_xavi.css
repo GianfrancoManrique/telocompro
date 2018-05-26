@@ -212,7 +212,8 @@ li a{
 	font-family: 'Baloo Bhaina', cursive;
 	margin-top: 20px;
 	color: #12a7c8;
-	text-align: center;
+	text-align: center; 
+	pointer-events: none;
 }
 
 .agregar span{
