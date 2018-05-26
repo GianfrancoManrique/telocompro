@@ -12,8 +12,37 @@ body {
 }
 
 .nombre_page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nombre_page h1 {
+    font-family: 'Baloo Bhaina', cursive;
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.nombre_page p {
+    color: #fff;
+    font-size: 23px;
+    position: relative;
+    bottom: 9px;
+}
+
+/* MENU HOMBRE */
+.menu_home {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    height: 69px;
+}
+
+.menu_home a {
+    color: #fff;
+    font-size: 13.5px;
 }
 
 
