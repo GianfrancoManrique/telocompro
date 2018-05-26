@@ -76,7 +76,8 @@ controlador.registrarCliente= async (req, res, next)=>{
 		}
 		
 		let idregistrado=await model.regCliente(cliente);
-		res.send(idregistrado);
+		//res.send(idregistrado);
+		res.redirect('/dashboard-usuario');
 	} catch (error) {
 		console.log(error);
 	}
