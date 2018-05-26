@@ -57,6 +57,14 @@ controlador.subasta= async (req, res, next)=>{
 		console.log(error);
 	}
 }
+controlador.subastaUsuario= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("subasta-usuario");
+	} catch (error) {
+		console.log(error);
+	}
+}
 controlador.registrarCliente= async (req, res, next)=>{
 	try {
 
