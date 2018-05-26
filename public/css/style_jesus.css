@@ -2,6 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/************* INICIO **************
+**********************************/
+.contenedor-image {
+    background-image: url(../img/home.png);
+}
+
+
+/****** FORMULARIO REGISTRO ******
+**********************************/
 .card-cliente {
     opacity: 0.49;
     border-radius: 10px;
