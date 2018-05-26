@@ -27,4 +27,21 @@ modelo.regCliente=(idficha)=>{
 	});
 }
 
+modelo.regDeuda=(cliente)=>{
+	return new Promise(async (resolve,reject)=>{
+		try {
+			let comando='insert into produccion.deuda (idcliente,nombreentidad,numcuotasrestantes,cuotamensual,tea) values(';
+			comando=comando.concat(cliente.idcliente,',\'',cliente.nombreentidad,'\',');
+			comando=comando.concat(cliente.numcuotasrestantes,',',cliente.cuotamensual,',');
+			comando=comando.concat(cliente.tea,')');
+
+			let resultado=await conexion.query(comando);
+			resolve(resultado);
+		} catch (error) {
+			reject(error);
+		}
+	});
+}
+
+
 module.exports = modelo;
