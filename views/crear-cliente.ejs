@@ -10,38 +10,38 @@
                 <form action="/registrar-cliente" method="POST">
                         <h3 class="formulario-titulo">Registrate</h3>
                         <div class="row d-flex justify-content-lg-around margin-bt">
-                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Nombres" id="nombres">
-                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Apellidos" id="apellidos">
-                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Celular" id="celular">
+                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Nombres" name="nombres">
+                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Apellidos" name="apellidos">
+                            <input type="text" class="col-lg-3 form-control input-text" placeholder="Celular" name="celular">
                         </div>
                         <div class="row d-flex justify-content-lg-around margin-bt">
-                            <select name="Tipo Documento" class="col-md-3 form-control input-text" id="tipodoc">
+                            <select name="Tipo Documento" class="col-md-3 form-control input-text" name="tipodoc">
                                 <option value="">DNI</option>
                                 <option value="">RUC</option>
                                 <option value="">PASAPORTE</option>
                                 <option value="">PART. NACIMIENTO</option>
                             </select>
-                            <input type="text" placeholder="Ingrese N" class="col-md-3 form-control input-text" id="numdoc">
-                            <select name="" class="col-md-3 form-control input-text" id="estcivil">
+                            <input type="text" placeholder="Ingrese N" class="col-md-3 form-control input-text" name="numdoc">
+                            <select name="" class="col-md-3 form-control input-text" name="estcivil">
                                 <option value="">Soltero</option>
                                 <option value="">Casado</option>
                             </select>
                         </div>
                         <div class="row d-flex justify-content-lg-around margin-bt">
-                            <input type="date" class="col-md-3 form-contro input-text" id="fecnacimiento">
-                            <select name="" class="col-md-3 form-control input-text" id="departamento">
+                            <input type="date" class="col-md-3 form-contro input-text" name="fecnacimiento">
+                            <select name="" class="col-md-3 form-control input-text" name="departamento">
                                 <option value="">Lima</option>
                             </select>
-                            <select name="" class="col-md-3 form-control input-text" id="provincia">
+                            <select name="" class="col-md-3 form-control input-text" name="provincia">
                                 <option value="">Huaura</option>
                             </select>
                         </div>
                         <div class="row d-flex justify-content-lg-around">
-                            <select name="" class="col-md-3 form-control input-text" id="distrito">
+                            <select name="" class="col-md-3 form-control input-text" name="distrito">
                                 <option value="">Huacho</option>
                             </select>
-                            <input type="text" class="col-md-3 form-control input-text" placeholder="Correo Electronico" id="correo">
-                            <input type="text" class="col-md-3 form-control input-text" placeholder="Contraseña" id="contrasena">
+                            <input type="text" class="col-md-3 form-control input-text" placeholder="Correo Electronico" name="correo">
+                            <input type="text" class="col-md-3 form-control input-text" placeholder="Contraseña" name="contrasena">
                         </div>
                         <div class="container-btn">
                             <button type="submit" class="btn btn-vamos">Allá Vamos</button>
