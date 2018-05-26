@@ -41,10 +41,9 @@ controlador.dashboardusuario= async (req, res, next)=>{
 controlador.dashboardfinanciera= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
-		let ofertasActivas=await model.ofertasActivas();
+		let ofertasActivas=await model.consultarResumenPorEncuestador();
 
-		res.render("dashboard-financiera",{ofertasActivas});
-		console.log(ofertasActivas);
+        res.render("dashboard-financiera",ofertasActivas);
 	} catch (error) {
 		console.log(error);
 	}
@@ -53,14 +52,6 @@ controlador.subasta= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
         res.render("subasta");
-	} catch (error) {
-		console.log(error);
-	}
-}
-controlador.subastaUsuario= async (req, res, next)=>{
-	try {
-		//console.log('Desde aca');
-        res.render("subasta-usuario",{});
 	} catch (error) {
 		console.log(error);
 	}
@@ -75,23 +66,20 @@ controlador.registrarCliente= async (req, res, next)=>{
 		estadocivil:req.body.estadocivil,ingresos:req.body.ingresos,dependencia:req.body.dependencia
 		}
 		
-		
 		let idregistrado=await model.regCliente(cliente);
-		//res.send(idregistrado);
-		res.redirect('/dashboard-usuario');
+		res.send(idregistrado);
 	} catch (error) {
 		console.log(error);
 	}
 }
 controlador.registrarSubasta= async (req, res, next)=>{
 	try {
-		let subasta={nombreentidad:req.body.nombreentidad,numcuotasrestantes:req.body.numcuotasrestantes,
+		let cliente={nombreentidad:req.body.nombreentidad,numcuotasrestantes:req.body.numcuotasrestantes,
 			cuotamensual:req.body.cuotamensual,tea:req.body.tea,idcliente:req.body.idcliente
 		}
 		
-		let idregistrado=await model.regSubasta(subasta);
-		res.redirect('/dashboard-financiera');
-		//res.send(idregistrado);
+		let idregistrado=await model.regDeuda(cliente);
+		res.send(idregistrado);
 	} catch (error) {
 		console.log(error);
 	}
