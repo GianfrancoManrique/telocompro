@@ -15,4 +15,13 @@ controlador.obtenerFechayHora = async (req, res, next)=>{
 	}
 }
 
+controlador.crearCliente= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("crear-cliente");
+	} catch (error) {
+		console.log(error);
+	}
+}
+
 module.exports = controlador;
