@@ -121,14 +121,14 @@ body {
     display: inline-block;
 }
 
-.finer, .tea, .month {
+.finer-j, .tea, .month {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
 }
 
-.finer {
+.finer-j {
     top:10px;
     left: 60%;
 }
