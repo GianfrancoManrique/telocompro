@@ -22,11 +22,11 @@
 				</div>
 				<div class="forms">
 					<h4>¿En que entidad bancaria se encuentra tu deuda?</h4>
-					<form action="">
+					<form action="/registrar-subasta" method="POST">
 						<div class="row">
-							
+								<input type="hidden" name="idcliente" value="6">
 								<div class="col-lg-5">
-									<select name=""  class="form-control" id="financiero">
+									<select name="nombreentidad"  class="form-control" id="financiero">
 										<option value="">BBVA Continental</option>
 										<option value="">BCP</option>
 										<option value="">Interbank</option>
@@ -39,15 +39,15 @@
 								<br>
 								<div class="col-lg-7 nucuotas">
 										<label for="">número total de cuotas</label>
-										<input type="text" class="form-control">
+										<input type="text" name="numcuotasrestantes" class="form-control">
 								</div>
 								<div class="col-lg-6 nucuotas">
 										<label for="">Cuota mensual</label>
-										<input type="text" class="form-control">
+										<input type="text" name="cuotamensual" class="form-control">
 								</div>
 								<div class="col-lg-6 nucuotas">
 									<label for="">TEA %</label>
-									<input type="text" class="form-control">
+									<input type="text" name="tea" class="form-control">
 								</div>
 							
 						</div>
