@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .card-cliente {
     opacity: 0.49;
     border-radius: 10px;
@@ -10,10 +14,11 @@
     text-align: center;
     color: #22a7c6;
     margin-bottom: 40px;
+	font-family: 'Baloo Bhaina', cursive;
 }
 
 .input-text {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* background-color: #7fccdd; */
     border: solid 1px #7fccdd;
 }
