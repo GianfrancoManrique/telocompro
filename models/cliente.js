@@ -53,7 +53,7 @@ modelo.regDeuda=(cliente)=>{
 modelo.ofertasActivas=(idficha)=>{
 	return new Promise(async (resolve,reject)=>{
 		try {
-			let comando='select sum(numcuotasrestantes * cuotamensual), d.idsubasta from produccion.deuda d inner join produccion.subasta s on d.idsubasta = s.idsubasta where d.idsubasta is not null group by d.idsubasta';
+			let comando="select 'S/. ' ||sum(numcuotasrestantes * cuotamensual), d.idsubasta from produccion.deuda d inner join produccion.subasta s on d.idsubasta = s.idsubasta where d.idsubasta is not null group by d.idsubasta";
 			let resultado=await conexion.query(comando);
 			resolve(resultado.rows);
 		} catch (error) {
