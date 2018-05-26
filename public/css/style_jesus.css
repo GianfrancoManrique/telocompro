@@ -126,19 +126,36 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
+    font-family: 'Baloo Bhaina', cursive;
 }
 
 .finer-j {
-    top:10px;
+    top: 30px;
     left: 60%;
 }
 
 .tea {
-    top:40px;
+    top: 60px;
     left: 60%;
 }
 
 .month {
-    top:70px;
+    top: 95px;
     left: 60%;
 }
+
+.porcentaje {
+    font-size: 20px;
+}
+
+.container-btn-subasta {
+    text-align: center;
+}
+
+.btn-subasta {
+    background-color: #f11f55;
+    color: #fff;
+    font-family: 'Baloo Bhaina', cursive;
+    margin-top: 8px;
+}
+
