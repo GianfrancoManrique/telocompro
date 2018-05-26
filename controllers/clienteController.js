@@ -1,7 +1,7 @@
 let model = require("../models/cliente");
 
 let controlador = ()=>{};
-
+/*
 controlador.obtenerFechayHora = async (req, res, next)=>{
 	try {
         let fechaHora=await model.consultarPerfil();
@@ -14,7 +14,7 @@ controlador.obtenerFechayHora = async (req, res, next)=>{
 		console.log(error);
 	}
 }
-
+*/
 controlador.crearCliente= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
@@ -23,7 +23,30 @@ controlador.crearCliente= async (req, res, next)=>{
 		console.log(error);
 	}
 }
-/*
+controlador.dashboardusuario= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("dashboard-usuario");
+	} catch (error) {
+		console.log(error);
+	}
+}
+controlador.dashboardfinanciera= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("dashboard-financiera");
+	} catch (error) {
+		console.log(error);
+	}
+}
+controlador.subasta= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("subasta");
+	} catch (error) {
+		console.log(error);
+	}
+}
 controlador.registrarCliente= async (req, res, next)=>{
 	try {
 
@@ -40,13 +63,5 @@ controlador.registrarCliente= async (req, res, next)=>{
 		console.log(error);
 	}
 }
-*/
-controlador.dashboardfinanciera= async (req, res, next)=>{
-	try {
-		//console.log('Desde aca');
-        res.render("dashboard-financiera");
-	} catch (error) {
-		console.log(error);
-	}
-}
+
 module.exports = controlador;
