@@ -41,9 +41,10 @@ controlador.dashboardusuario= async (req, res, next)=>{
 controlador.dashboardfinanciera= async (req, res, next)=>{
 	try {
 		//console.log('Desde aca');
-		let ofertasActivas=await model.consultarResumenPorEncuestador();
+		let ofertasActivas=await model.ofertasActivas();
 
-        res.render("dashboard-financiera",ofertasActivas);
+		res.render("dashboard-financiera",{ofertasActivas});
+		console.log(ofertasActivas);
 	} catch (error) {
 		console.log(error);
 	}
