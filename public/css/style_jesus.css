@@ -27,7 +27,7 @@ body {
 }
 .nombre_page p {
     color: #fff;
-    font-size: 23px;
+    font-size: 18px;
     position: relative;
     bottom: 9px;
 }
@@ -86,4 +86,59 @@ body {
 
 .margin-top-container {
     margin-top: 96px;
+}
+
+/* subasta-usuario */
+.ingresar-mouns {
+    text-align: center;
+}
+
+.ingresar-mouns input {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #22a7c6;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    width: 120px;
+}
+
+.subasta-usuario h2 {
+    font-family: 'Baloo Bhaina', cursive;
+    color: #12a7c8;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container-image {
+    position: relative;
+    display: inline-block;
+}
+
+.finer, .tea, .month {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.finer {
+    top:10px;
+    left: 60%;
+}
+
+.tea {
+    top:40px;
+    left: 60%;
+}
+
+.month {
+    top:70px;
+    left: 60%;
 }
