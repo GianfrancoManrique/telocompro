@@ -64,7 +64,7 @@ controlador.registrarCliente= async (req, res, next)=>{
 		celular:req.body.celular,tipodoc:req.body.tipodoc,numdoc:req.body.numdoc,
 		departamento:req.body.departamento,provincia:req.body.provincia,distrito:req.body.distrito,
 		correo:req.body.correo,contrasena:req.body.contrasena,fecnacimiento:req.body.fecnacimiento,
-		estcivil:req.body.estcivil
+		estadocivil:req.body.estadocivil,ingresos:req.body.ingresos,dependencia:req.body.dependencia
 		}
 		
 		let idregistrado=await model.regCliente(cliente);
