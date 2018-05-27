@@ -13,7 +13,7 @@
   						<span class="oferta-title">Tiempo restante</span>
   						<p class="time">35:05:03</p>
   						<div class="competidores">3 Competidores en subasta</div>
-  						<button class="boton-subasta">Ingresar a la subasta</button>
+  						<button class="boton-subasta" data-id='<%= ofA.idsubasta %>'>Ingresar a la subasta</button>
 					  </div>
 					  
 			<% }) %>
@@ -25,3 +25,8 @@
 
 <% include partials/footer %>
    
+<script>
+	$('.boton-subasta').click(function(){
+
+	});
+</script>
