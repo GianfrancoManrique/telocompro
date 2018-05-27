@@ -75,7 +75,7 @@ controlador.registrarCliente= async (req, res, next)=>{
 		estadocivil:req.body.estadocivil,ingresos:req.body.ingresos,dependencia:req.body.dependencia
 		}
 		
-		
+
 		let idregistrado=await model.regCliente(cliente);
 		//res.send(idregistrado);
 		res.redirect('/dashboard-usuario');
@@ -92,6 +92,14 @@ controlador.registrarSubasta= async (req, res, next)=>{
 		let idregistrado=await model.regSubasta(subasta);
 		res.redirect('/dashboard-financiera');
 		//res.send(idregistrado);
+	} catch (error) {
+		console.log(error);
+	}
+}
+controlador.ganadorSubasta= async (req, res, next)=>{
+	try {
+		//console.log('Desde aca');
+        res.render("ganador-subasta",{});
 	} catch (error) {
 		console.log(error);
 	}

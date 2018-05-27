@@ -10,5 +10,7 @@ router.get('/dashboard-financiera',controlador.dashboardfinanciera);
 router.get('/dashboard-usuario',controlador.dashboardusuario);
 router.get('/subasta',controlador.subasta);
 router.get('/subasta-usuario',controlador.subastaUsuario);
+router.get('/ganador-subasta',controlador.ganadorSubasta);
 router.post('/registrar-subasta',controlador.registrarSubasta);
+
 module.exports = router;    

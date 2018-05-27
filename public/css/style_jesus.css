@@ -52,7 +52,7 @@ body {
     opacity: 0.49;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0px 3px 10px 0 rgba(154, 153, 158, 0.35);
+    box-shadow: 5px -1px 20px 0 rgba(0,0,0,0.2);
     padding: 70px 11px;
 }
 
@@ -126,19 +126,36 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
+    font-family: 'Baloo Bhaina', cursive;
 }
 
 .finer-j {
-    top:10px;
+    top: 30px;
     left: 60%;
 }
 
 .tea {
-    top:40px;
+    top: 60px;
     left: 60%;
 }
 
 .month {
-    top:70px;
+    top: 95px;
     left: 60%;
 }
+
+.porcentaje {
+    font-size: 20px;
+}
+
+.container-btn-subasta {
+    text-align: center;
+}
+
+.btn-subasta {
+    background-color: #f11f55;
+    color: #fff;
+    font-family: 'Baloo Bhaina', cursive;
+    margin-top: 8px;
+}
+
