@@ -310,12 +310,14 @@ li a{
 	border: 0 transparent;
 	margin: 20px 0;
 }
-.tsmall{
+
+.pero :nth-child(2) .square-item{
 	transform: scale(0.7);
 }
-.ttsmall{
+.pero :nth-child(3) .square-item{
 	transform: scale(0.5);
 }
+
 .ho{
 	transform: scale(1);
 }
