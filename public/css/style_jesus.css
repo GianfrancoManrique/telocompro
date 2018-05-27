@@ -159,3 +159,33 @@ body {
     margin-top: 8px;
 }
 
+
+/* GANADOR */
+.mensaje-ganador {
+    color: #1fa9c7;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+.ganador-titulo,
+.usuario-deuda,
+.comunica-cliente  {
+    text-align: center;
+}
+
+.ganador-titulo {
+    font-size: 75px;
+}
+
+.usuario-deuda {
+    font-size: 52px;
+    margin-bottom: 0;
+}
+
+.btn-perfil {
+    font-size: 22px;
+}
+
+/* .comunica-cliente {
+    margin-top: 25px;
+} */
+
