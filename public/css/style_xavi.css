@@ -325,3 +325,9 @@ li a{
 	transform: scale(1.2);
 	transition: all .2s;
 }
+
+.verresultado{
+	margin-left: 15px;
+	color: #ff0000;
+	padding-left: 1px;
+}
